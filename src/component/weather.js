@@ -9,6 +9,7 @@ const weather = (props) => {
                     <i className={`wi ${props.weatherIcon} display-1`}></i>
                 </h5>
                 {props.temp_celsius ? (<h1 className="py-2">{props.temp_celsius}&deg;</h1>) : null}
+               {/* {props/ console.log(props.min_temp)} */}
                 {minmaxTemp(props.min_temp, props.max_temp)}
                 <h4 className="py-2">{props.description}</h4>
             </div>
