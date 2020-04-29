@@ -82,6 +82,7 @@ class App extends Component {
         temp_max: this.calCelsius(response.main.temp_max),
         temp_min: this.calCelsius(response.main.temp_min),
         description: response.weather[0].description.toUpperCase(),
+        error:false
       })
       this.get_WeatherIcon(this.weatherIcon, response.weather[0].id)
     }else{

@@ -1,17 +1,20 @@
-form{
+form {
     margin-top: 3rem;
 }
 
-form input[name="city"],
-form input[name="country"]{
+form input[name="city"], form input[name="country"] {
     background-color: transparent;
-    color: white;
+    color: black;
     border-radius: 0;
     border: none;
     border-bottom: 2px solid whitesmoke;
 }
 
-form input:focus{
-    background-color:transparent;
+form input:focus {
+    background-color: transparent !important;
     box-shadow: none !important;
+}
+
+form input, container {
+    color: white !important;
 }
