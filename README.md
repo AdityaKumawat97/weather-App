@@ -61,7 +61,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This section has moved here: https://sad-panini-8f91d2.netlify.app
 
 ### `yarn build` fails to minify
 
