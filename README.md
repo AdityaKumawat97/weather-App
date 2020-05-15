@@ -1,68 +1,164 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Weather
 
-## Available Scripts
+A weather application that displays the current weather based on the entered geolocation data.
 
-In the project directory, you can run:
+Go **[here](https://awesome-boyd-3e2e65.netlify.app)** for live demo.
 
-### `yarn start`
+The weather application is composed of the following components:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Search-box - Gets City and country input from the user
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* CurrentWeatherDisplay - Displays weather information for the entered locatio data in time.
 
-### `yarn test`
+* Min&Max - Displays minimum expected temperature and maximum expected temperature
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+The following services are used to obtain weather data:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* WeatherService - A wrapper that is responsible for integrating with the [OpenWeather Api]. It provides an interface that allows one to obtain current weather information.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features:
 
-### `yarn eject`
+* Display current weather
+* Display minimum expected temperature
+* Displays maximum expected temperature
+* Displays an Image showcasing the weather condition
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project also demonstrates:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* a typcial React project layout structure
+* [OpenWeather API] integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Screenshots:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![React Weather](images/pc.png)
+![Mobile-View](images/mobile.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Developed With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
+* [Node.js](https://nodejs.org/en/) - Javascript runtime
+* [React](https://reactjs.org/) - A javascript library for building user interfaces
+* [Babel](https://babeljs.io/) - A transpiler for javascript
+* [Webpack](https://webpack.js.org/) - A module bundler
+* [SCSS](http://sass-lang.com/) - A css metalanguage
+* [Bootstrap 4](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
+* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+* [OpenWeather API] - Provides weather information
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Getting Started
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Making a Progressive Web App
+### Prerequisites
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+The following software is required to be installed on your system:
 
-### Advanced Configuration
+* Node 8.x
+* Npm 3.x
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Type the following commands in the terminal to verify your node and npm versions
 
-### Deployment
+```bash
+node -v
+npm -v
+```
 
-This section has moved here: https://sad-panini-8f91d2.netlify.app
+### Install
 
-### `yarn build` fails to minify
+Follow the following steps to get development environment running.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Clone _'weather-App'_ repository from GitHub
+
+  ```bash
+  git clone https://github.com/AdityaKumawat97/weather-App
+  ```
+
+   _OR USING SSH_
+
+  ```bash
+  git clone git@github.com:AdityaKumawat97/weather-App.git
+  ```
+
+* Install node modules
+
+   ```bash
+   cd weather-App
+   npm install
+   ```
+
+Before continuing, the following steps are required:
+
+1. Get API keys
+
+   * OpenWeather API
+
+     Have a look at [OpenWeather API](http://openweathermap.org/api)
+
+     Get an API key [here](http://openweathermap.org/appid)
+
+
+### Build
+
+* Build application
+
+  This command will also run ESLint as part of build process.
+
+  ```bash
+  npm run build
+  ```
+
+* Build application and start watching for changes
+
+  This command will also run ESLint as part of build process.
+
+  ```bash
+  npm run build:watch
+  ```
+
+### Run ESlint
+
+* Lint project using ESLint
+
+  ```bash
+  npm run lint
+  ```
+
+* Lint project using ESLint, and autofix
+
+  ```bash
+  npm run lint:fix
+  ```
+
+### Run
+
+* Run start
+
+  This will run the _'serve'_ npm task
+
+  ```bash
+  npm start
+  ```
+
+* Run webpack dev server
+
+  ```bash
+  npm run serve:dev
+  ```
+
+* Alternatively run live-server (simple development http server with live reload capability)
+
+  ```bash
+  npm run serve
+  ```
+
+---
+
+## References
+https://github.com/akashyap2013/Weather_App
