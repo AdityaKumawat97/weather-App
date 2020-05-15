@@ -33,7 +33,7 @@ This project also demonstrates:
 **Screenshots:**
 
 ![React Weather](images/pc.png)
-![Mobile-View](images/mobile.png)
+![Mobile-View](images/mobview2.png)
 
 ---
 
